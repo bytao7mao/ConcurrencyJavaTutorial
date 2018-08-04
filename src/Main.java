@@ -19,7 +19,7 @@ public class Main {
     //Runnable Pattern was introduces in Java 1.0 - the first pattern used to launch Threads
 
     //Synchronization - Guarantees the exclusive execution of a block of code
-    //
+    //Volatile - Essentially, volatile is used to indicate that a variable's value will be modified by different threads.
     public static void main(String[] args) {
         //The most basic way to create threads in
         //Java is to use the Runnable Pattern

@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88246a3e-8ea9-4219-8d78-41f4dd739563" name="Default" comment="Runnable demo">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DeadLock/ProducerConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FalseSharing/FalseSharing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Volatile/Classing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Worker/Worker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ConcurrencyThreadSynchronization/DeadLock/A.class" afterPath="$PROJECT_DIR$/out/production/ConcurrencyThreadSynchronization/DeadLock/A.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ConcurrencyThreadSynchronization/DeadLock/RunningA.class" afterPath="$PROJECT_DIR$/out/production/ConcurrencyThreadSynchronization/DeadLock/RunningA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ConcurrencyThreadSynchronization/Main.class" afterPath="$PROJECT_DIR$/out/production/ConcurrencyThreadSynchronization/Main.class" />
+    <list default="true" id="88246a3e-8ea9-4219-8d78-41f4dd739563" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DeadLock/A.java" afterPath="$PROJECT_DIR$/src/DeadLock/A.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DeadLock/RunningA.java" afterPath="$PROJECT_DIR$/src/DeadLock/RunningA.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Singleton.java" afterPath="$PROJECT_DIR$/src/Singleton.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="272">
+              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -56,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Worker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Worker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Worker/Worker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -162,11 +152,11 @@
         <option value="$PROJECT_DIR$/src/DeadLock/A.java" />
         <option value="$PROJECT_DIR$/src/DeadLock/ProducerConsumer.java" />
         <option value="$PROJECT_DIR$/src/Volatile/Classing.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/FalseSharing/FalseSharing.java" />
         <option value="$PROJECT_DIR$/src/Singleton.java" />
         <option value="$PROJECT_DIR$/src/classes/LongWrapper.java" />
         <option value="$PROJECT_DIR$/src/Worker/Worker.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -754,7 +744,7 @@
       <option name="presentableId" value="Default" />
       <updated>1533321624596</updated>
       <workItem from="1533321625973" duration="8061000" />
-      <workItem from="1533369661999" duration="10556000" />
+      <workItem from="1533369661999" duration="10679000" />
     </task>
     <task id="LOCAL-00001" summary="Runnable demo">
       <created>1533324628037</created>
@@ -763,11 +753,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533324628037</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished Course">
+      <created>1533392739493</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533392739493</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18617000" />
+    <option name="totallyTimeSpent" value="18740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="562" y="127" width="1156" height="906" extended-state="0" />
@@ -812,7 +809,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Runnable demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Runnable demo" />
+    <MESSAGE value="Finished Course" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Course" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1004,14 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/LongWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1029,6 +1019,14 @@
             <element signature="e#769#902#0" expanded="true" />
             <element signature="e#901#902#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
