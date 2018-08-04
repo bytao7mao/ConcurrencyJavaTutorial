@@ -1,5 +1,7 @@
 public class Main {
 
+    //A Thread executes a task
+
     //A Thread is a set of instructions
     //An application can be composed of several threads
     //Different threads can be executed "at the same time"
@@ -14,6 +16,10 @@ public class Main {
     //needed by a thread T2,
     //and T2 holds the key needed by T1
 
+    //Runnable Pattern was introduces in Java 1.0 - the first pattern used to launch Threads
+
+    //Synchronization - Guarantees the exclusive execution of a block of code
+    //
     public static void main(String[] args) {
         //The most basic way to create threads in
         //Java is to use the Runnable Pattern
@@ -30,6 +36,7 @@ public class Main {
 
         //Java 8
         Runnable runnableJava8 = () -> {
+            //getting current thread (this is a trick :P)
             String nameOfthisThread = Thread.currentThread().getName();
             System.out.println("I'm running in thread " + nameOfthisThread);
         };
@@ -37,6 +44,15 @@ public class Main {
         Thread thread = new Thread(runnableJava8);
         //Then call the start() method of this thread object
         thread.start();
+        //thread.run(); // NO!!! this will show main thread
+
+        //how to interrupt it ?
+        //thread.interrupt(); //will throw InterruptedException
+        //while(! Thread.currentThread().isInterrupted()){}
+
+        //we can read the state of a thread with the following method:
+        Thread.State state = thread.getState();
+        //states: NEW, RUNNABLE, TERMINATED, BLOCKED, WAITING, TIME_WAITING
     }
 
 

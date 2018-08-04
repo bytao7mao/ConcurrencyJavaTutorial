@@ -5,9 +5,9 @@ package DeadLock;
  */
 public class RunningA {
     public static void main(String[] args) throws InterruptedException {
-        A a = new A();
-        Runnable r1 = () -> a.a();
-        Runnable r2 = () -> a.b();
+        A aClass = new A();
+        Runnable r1 = () -> aClass.a();
+        Runnable r2 = () -> aClass.b();
         Thread t1 = new Thread(r1);
         t1.start();
         Thread t2 = new Thread(r2);

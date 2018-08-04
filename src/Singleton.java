@@ -4,16 +4,34 @@
 
 //we will use in this example Singleton pattern
 public class Singleton {
+    private final static Object key = new Object();
     private static Singleton instance;
     //constructor private to not be able to create type of it
     private Singleton(){}
-    public static synchronized Singleton getInstance(){
+    public static Singleton getInstance() {
         //every java object has a lock method (with a key)
         //synchronizing means protecting this method by not
         //letting other threads to run at the same time
-        if (instance == null){
-            instance = new Singleton();
+
+
+        //if instance is not null
+        //we read it and return it
+        //non-sync read
+        if (instance != null) {
+            return instance;
         }
-        return instance;
+
+        //if instance is null
+        //we create it and write it
+        //sync write
+        synchronized (key) {
+            //read operation
+            if (instance == null) {
+                //write operation
+                instance = new Singleton();
+            }
+
+            return instance;
+        }
     }
 }

@@ -15,9 +15,11 @@ public class A {
     void b(){
         synchronized (key2){
             System.out.println("b - Thread: " + Thread.currentThread().getName());
-            c();
+           c();
         }
     }
+
+    //this can't be called because the key1 is blocked at method a()
     void c(){
         synchronized (key1){
             System.out.println("c- Thread: " + Thread.currentThread().getName());
