@@ -11,11 +11,11 @@ public class Singleton {
     private Singleton(String nameOfInstance){
         this.nameOfInstance = nameOfInstance;
     }
-
     public static void checkInstance(){
-        System.out.println((instance != null) ? "(yes) instance created named: " + instance.nameOfInstance : "instance null (no)");
+        System.out.println((instance != null) ?
+                "(yes) instance created named: " + instance.nameOfInstance :
+                "instance null (no)");
     }
-
     public static Singleton getInstance(String nameOfInstance) {
         //every java object has a lock method (with a key)
         //synchronizing means protecting this method by not
@@ -27,7 +27,6 @@ public class Singleton {
         if (instance != null) {
             return instance;
         }
-
         //if instance is null
         //we create it by writing it
         //type: sync write

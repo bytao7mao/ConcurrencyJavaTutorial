@@ -17,6 +17,9 @@ public class HostLookup {
             System.out.println("\nEnter a host name: ");
             host = scanner.nextLine();
             try {
+                //performs a DNS lookup on the host name
+                //and returns an array that contains
+                //all the internet addresses for the name
                 InetAddress[] addresses
                         = InetAddress.getAllByName(host);
                 for (InetAddress ip:addresses){
