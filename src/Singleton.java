@@ -7,8 +7,16 @@ public class Singleton {
     private final static Object key = new Object();
     private static Singleton instance;
     //constructor private to not be able to create type of it
-    private Singleton(){}
-    public static Singleton getInstance() {
+    private final String nameOfInstance;
+    private Singleton(String nameOfInstance){
+        this.nameOfInstance = nameOfInstance;
+    }
+
+    public static void checkInstance(){
+        System.out.println((instance != null) ? "(yes) instance created named: " + instance.nameOfInstance : "instance null (no)");
+    }
+
+    public static Singleton getInstance(String nameOfInstance) {
         //every java object has a lock method (with a key)
         //synchronizing means protecting this method by not
         //letting other threads to run at the same time
@@ -27,7 +35,7 @@ public class Singleton {
             //read operation
             if (instance == null) {
                 //write operation
-                instance = new Singleton();
+                instance = new Singleton(nameOfInstance);
             }
             return instance;
         }//end of sync key
