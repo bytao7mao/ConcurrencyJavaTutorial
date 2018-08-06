@@ -18,7 +18,7 @@ public class BartQuote {
         arrayList.add("I will not skateboard in the halls");
         arrayList.add("I will not burp in the class");
     }
-    private String getQuote(){
+    public String getQuote(){
         int i = (int) (Math.random()*arrayList.size());
         return arrayList.get(i);
     }
