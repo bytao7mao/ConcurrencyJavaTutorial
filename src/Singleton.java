@@ -13,25 +13,23 @@ public class Singleton {
         //synchronizing means protecting this method by not
         //letting other threads to run at the same time
 
-
         //if instance is not null
         //we read it and return it
-        //non-sync read
+        //type: non-sync read
         if (instance != null) {
             return instance;
         }
 
         //if instance is null
-        //we create it and write it
-        //sync write
+        //we create it by writing it
+        //type: sync write
         synchronized (key) {
             //read operation
             if (instance == null) {
                 //write operation
                 instance = new Singleton();
             }
-
             return instance;
-        }
-    }
-}
+        }//end of sync key
+    }//end of getInstance method
+}//end of Singleton class
