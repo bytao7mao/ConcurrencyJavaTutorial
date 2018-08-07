@@ -1,5 +1,8 @@
 //Reflection
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class Foo {
 
     public void printAMessage() {
