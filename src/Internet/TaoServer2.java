@@ -10,15 +10,16 @@ import java.util.Scanner;
  */
 public class TaoServer2 {
     BartQuote bart = new BartQuote();
-    static int port = 0770;
-    static String welcome = "Welcome to TaoServer 2.0";
-    static String listenToPort = "Listening to port " + port;
-    static String con = "Connection established";
-    static String exc = "System exception!";
-    static ServerSocket ss;
-    static Socket s;
-    static Thread t;
+
     public static void main(String[] args) {
+        int port = 1234;
+        String welcome = "Welcome to TaoServer 2.0";
+        String listenToPort = "Listening to port " + port;
+        String con = "Connection established";
+        String exc = "System exception!";
+        ServerSocket ss;
+        Socket s;
+        Thread t;
         try{
             System.out.println(welcome);
             System.out.println(listenToPort);
@@ -33,7 +34,6 @@ public class TaoServer2 {
         }
     }
     class TaoThread implements Runnable{
-        TaoServer2 taoServer2 = new TaoServer2();
         private Socket s;
         private BartQuote bart;
         public TaoThread(Socket socket, BartQuote bartQuote){
@@ -47,7 +47,7 @@ public class TaoServer2 {
             try{
                 Scanner in = new Scanner(s.getInputStream());
                 PrintWriter out = new PrintWriter(s.getOutputStream(),true);
-                out.println(welcome);
+                out.println("Welcome to TaoServer 2.0");
                 out.println("Enter BYE to exit.");
                 while (true){
                     String input = in.nextLine();

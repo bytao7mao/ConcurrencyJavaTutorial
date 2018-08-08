@@ -14,10 +14,13 @@ public class Person {
 
 
     public static void main(String[] args) {
-        Person person = new Person();
-        person.name = "Aida";
+        String marius = "Marius";
         Student student = new Student();
-        String name = person.getName();
-        System.out.println(name);
+        String nameForStudent = student.studentName = marius;
+        String name2 = student.name = marius+"B";
+        Person person = new Person();
+        person.name = "Rares";
+        System.out.println(student.studentName);
+        System.out.println(student.name);
     }
 }

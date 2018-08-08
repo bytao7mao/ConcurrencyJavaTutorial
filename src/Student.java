@@ -6,7 +6,7 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return this.getName();
+        return this.getName()+" from toString method";
     }
     void getNameFromSuperClass(String personName){
         super.name = personName;
