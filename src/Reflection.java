@@ -1,4 +1,3 @@
-package com.company;
 // A simple Java program to demonstrate the use of reflection
 import java.lang.reflect.Method;
 import java.lang.reflect.Field;
