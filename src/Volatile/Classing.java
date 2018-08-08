@@ -10,11 +10,11 @@ public class Classing {
     private volatile static int index=0;
     public static final String wait = "wait";
     private static final String equals = "equals";
-    private static final String toString = "toString";
-    private static final String hashcode = "hashCode";
+    private static final String toString = "tostring";
+    private static final String hashcode = "hashcode";
     private static final String notify = "notify";
-    private static final String notifyall = "notifyAll";
-    private static final String getclass = "getClass";
+    private static final String notifyall = "notifyall";
+    private static final String getclass = "getclass";
 
     public static void increment(){
         setIndex(getIndex() + 1);
@@ -45,29 +45,35 @@ public class Classing {
 
         // Printing method names
         for (Method method:methods){
-            switch (method.getName()){
-                case wait:
-                case equals:
-                case toString:
-                case hashcode:
-                case notify:
-                case notifyall:
-                case getclass:
-                    return;
-                default:
-                    System.out.print(method.getName()+" ");
-            }
-//            if (method.getName().equalsIgnoreCase("wait")||
-//                    method.getName().equalsIgnoreCase("equals")||
-//                    method.getName().equalsIgnoreCase("toString")||
-//                    method.getName().equalsIgnoreCase("hashcode")||
-//                    method.getName().equalsIgnoreCase("notify")||
-//                    method.getName().equalsIgnoreCase("notifyall")||
-//                    method.getName().equalsIgnoreCase("getClass")){
-//                return;
-//            }else {
-//                System.out.print(method.getName()+" ");
+//            System.out.println(method.getName()+" ");
+
+            //#switch version
+//            switch (method.getName()){
+//                case wait:
+//                case equals:
+//                case toString:
+//                case hashcode:
+//                case notify:
+//                case notifyall:
+//                case getclass:
+//                    return;
+//                default:
+//                    System.out.print(method.getName()+" ");
 //            }
+
+            //#if-else version
+            if (method.getName().equalsIgnoreCase(wait))
+//                    method.getName().equalsIgnoreCase(equals)||
+//                    method.getName().equalsIgnoreCase(toString)||
+//                    method.getName().equalsIgnoreCase(hashcode)||
+//                    method.getName().equalsIgnoreCase(notify)||
+//                    method.getName().equalsIgnoreCase(notifyall)||
+                    //method.getName().equalsIgnoreCase(getclass))
+            {
+                return;
+            }else {
+                System.out.print(method.getName()+" ");
+            }
         }
     }
 
