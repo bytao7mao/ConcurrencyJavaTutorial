@@ -31,18 +31,18 @@ import java.lang.reflect.Method;
 @java.lang.annotation.Retention(RetentionPolicy.RUNTIME)
 public @interface RetentionExample {
     String name();
-    String desc();
+    String years();
 }
 
 class Retention {
-    @RetentionExample(name = "Annotation Example", desc = "100")
+    @RetentionExample(name = "Annotation Example", years = "100")
     public static void myMeth() {
         Retention retention = new Retention();
         try {
-            Class c = retention.getClass();
-            Method m = c.getMethod("myMeth");
-            RetentionExample anno = m.getAnnotation(RetentionExample.class);
-            System.out.println(anno.name() + " " + anno.desc());
+            Class retentionClass = retention.getClass();
+            Method myMeth = retentionClass.getMethod("myMeth");
+            RetentionExample annotation = myMeth.getAnnotation(RetentionExample.class);
+            System.out.println(annotation.name() + " " + annotation.years());
         } catch (NoSuchMethodException exc) {
             System.out.println("Method Not Found.");
         }
