@@ -20,4 +20,5 @@ public class VolatileClass {
             this.months = months;
             this.days   = days;
         }
+    //this is called FULL VOLATILITY
 }
