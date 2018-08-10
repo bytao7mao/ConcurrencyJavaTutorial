@@ -21,4 +21,6 @@ public class VolatileClass {
             this.days   = days;
         }
     //this is called FULL VOLATILITY
+    
+    //use-case: use volatile variables when you really need to enforce visibility of variables.
 }
